@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <title>О реабилитации</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+// Убрать на html класс "no-js", добавить класс "js": с уровня стилей знаем работает ли JS
+document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+// Браузер и ОС
+function cth(c){document.documentElement.classList.add(c)}
+'ontouchstart' in window?cth('touch'):cth('no-touch');
+if(typeof InstallTrigger!=='undefined')cth('firefox');
+if(/constructor/i.test(window.HTMLElement)||(function(p){return p.toString()==="[object SafariRemoteNotification]"})(!window['safari']||(typeof safari!=='undefined'&&safari.pushNotification)))cth('safari');
+if(/*@cc_on!@*/false||!!document.documentMode)cth('ie');
+if(!(/*@cc_on!@*/false||!!document.documentMode)&&!!window.StyleMedia)cth('edge');
+if(!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime))cth('chrome');
+if(~navigator.appVersion.indexOf("Win"))cth('windows');
+if(~navigator.appVersion.indexOf("Mac"))cth('osx');
+if(~['iPad','iPhone','iPod'].indexOf(navigator.platform))cth('ios');
+if(~navigator.appVersion.indexOf("Linux"))cth('linux');
+
+// Добавление 1vh (использование: height: 100vh; height: calc(var(--vh, 1vh) * 100);) для фикса 100vh на мобилках
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+</script>
+</head>
+
+<body>
+  <header class="header  header--white">
+    <div class="header__mobile">
+      <div class="header__wrapper"><a class="header__logo" href="#"><img class="header__logo--white" src="img/logo-white.svg" alt="" /><img class="header__logo--black" src="img/logo-black.svg" alt="" /></a><button class="header__phone"><span> <a href="tel:88314223080">8 831 422-30-80 </a></span></button><button class="header__search"> <svg width="22" height="23" viewbox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.0833 17.9167C14.1334 17.9167 17.4167 14.6334 17.4167 10.5833C17.4167 6.53325 14.1334 3.25 10.0833 3.25C6.03325 3.25 2.75 6.53325 2.75 10.5833C2.75 14.6334 6.03325 17.9167 10.0833 17.9167Z" stroke="white" stroke-width="2" stroke-linecap="square"></path>
+            <path d="M19.2492 19.7492L15.2617 15.7617" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+          </svg></button><button class="header__menu"><span></span></button></div>
+    </div>
+    <div class="header__top">
+      <div class="header__wrapper"><button class="header__search"> <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="#0F1F3F" stroke-linecap="square"></path>
+            <path d="M13.9996 14.0001L11.0996 11.1001" stroke="#0F1F3F" stroke-linecap="square"></path>
+          </svg><span>Поиск</span></button>
+        <nav class="header__menu header__menu--top">
+          <ul>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Статьи</a></li>
+            <li><a href="">Акции</a></li>
+            <li><a href="">Юр. информация</a></li>
+          </ul>
+        </nav>
+        <div class="header__info"><button class="header__map"> <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.25 7C13.25 10.75 8 14.25 8 14.25C8 14.25 2.75 10.75 2.75 7C2.75 5.60761 3.30312 4.27226 4.28769 3.28769C5.27226 2.30312 6.60761 1.75 8 1.75C9.39239 1.75 10.7277 2.30312 11.7123 3.28769C12.6969 4.27226 13.25 5.60761 13.25 7V7Z" stroke="#0F1F3F" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8 8.25C8.69036 8.25 9.25 7.69036 9.25 7C9.25 6.30964 8.69036 5.75 8 5.75C7.30964 5.75 6.75 6.30964 6.75 7C6.75 7.69036 7.30964 8.25 8 8.25Z" fill="#0F1F3F" stroke="#0F1F3F" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg><span>Б. Печерская, д. 26</span></button><button class="header__time"><span>Сегодня работаем до 19:00</span></button>
+          <div class="header__inner"><button class="header__phone"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_5_127)">
+                  <path d="M14.6669 11.2802V13.2802C14.6677 13.4659 14.6297 13.6497 14.5553 13.8198C14.4809 13.9899 14.3718 14.1426 14.235 14.2681C14.0982 14.3937 13.9367 14.4892 13.7608 14.5487C13.5849 14.6082 13.3985 14.6303 13.2136 14.6136C11.1622 14.3907 9.19161 13.6897 7.46028 12.5669C5.8495 11.5433 4.48384 10.1777 3.46028 8.56689C2.3336 6.8277 1.63244 4.84756 1.41361 2.78689C1.39695 2.60254 1.41886 2.41673 1.47795 2.24131C1.53703 2.06589 1.63199 1.90469 1.75679 1.76797C1.88159 1.63126 2.03348 1.52203 2.20281 1.44724C2.37213 1.37245 2.55517 1.33374 2.74028 1.33356H4.74028C5.06382 1.33038 5.37748 1.44495 5.62279 1.65592C5.8681 1.86689 6.02833 2.15986 6.07361 2.48023C6.15803 3.12027 6.31458 3.74871 6.54028 4.35356C6.62998 4.59218 6.64939 4.8515 6.59622 5.10081C6.54305 5.35012 6.41952 5.57897 6.24028 5.76023L5.39361 6.60689C6.34265 8.27592 7.72458 9.65786 9.39361 10.6069L10.2403 9.76023C10.4215 9.58099 10.6504 9.45746 10.8997 9.40429C11.149 9.35112 11.4083 9.37053 11.6469 9.46023C12.2518 9.68593 12.8802 9.84248 13.5203 9.92689C13.8441 9.97258 14.1399 10.1357 14.3513 10.3852C14.5627 10.6348 14.6751 10.9533 14.6669 11.2802Z" stroke="#0F1F3F" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <defs>
+                  <clippath id="clip0_5_127">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clippath>
+                </defs>
+              </svg><span> <a href="tel:88314223080">8 831 422-30-80 </a></span></button><button class="header__callback"><span>Обратный звонок</span></button></div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__wrapper"><a class="header__logo" href="#"><img class="header__logo--white" src="img/logo-white.svg" alt="" /><img class="header__logo--black" src="img/logo-black.svg" alt="" /></a>
+        <nav class="header__menu header__menu--bottom">
+          <ul>
+            <li><button class="header__dropdown-btn"><span>Операции</span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 11.0876L8.69771 11.804L8 12.4835L7.30229 11.804L8 11.0876ZM2.44771 4.28411L8.69771 10.3712L7.30229 11.804L1.05229 5.71687L2.44771 4.28411ZM7.30229 10.3712L13.5523 4.28411L14.9477 5.71687L8.69771 11.804L7.30229 10.3712Z" fill="#0F1F3F"></path>
+                </svg></button>
+              <div class="header__dropdown">
+                <div class="header__dropdown-inner">
+                  <div class="tabs  tabs--horizontal tabs--column">
+                    <ul class="tabs__caption">
+                      <li>Пластическая хирургия</li>
+                      <li>Гинекология</li>
+                      <li>Общая хирургия</li>
+                      <li>Травматология и ортопедия</li>
+                      <li>Флебология</li>
+                      <li>Лор-хирургия</li>
+                    </ul>
+                    <div class="tabs__content">
+                      <div class="tabs__content-block">
+                        <div class="header__dropdown-column_list">
+                          <ul>
+                            <li><a href="">Пластика лица</a></li>
+                            <li><a href="">Ринопластика</a></li>
+                            <li><a href="">Круговая подтяжка лица (фейслифтинг)</a></li>
+                            <li><a href="">Подтяжка зон лица</a></li>
+                            <li><a href="">Нитевой лифтинг</a></li>
+                            <li><a href="">Липофилинг</a></li>
+                            <li><a href="">Радиочастотная липосакция аппаратом FaceTite</a></li>
+                            <li><a href="">Блефаропластика (подтяжка век)</a></li>
+                            <li><a href="">Хейлопластика (коррекция формы и размера губ)</a></li>
+                            <li><a href="">Отопластика (коррекция ушей)</a></li>
+                          </ul>
+                          <ul>
+                            <li><a href="">Пластика тела</a></li>
+                            <li><a href="">Операции по маммопластике</a></li>
+                            <li><a href="">Абдоминопластика (коррекция живота)</a></li>
+                            <li><a href="">Радиочастотная липосакция аппаратом BodyTite</a></li>
+                            <li><a href="">Подтяжка избыточной кожи рук и ног</a></li>
+                            <li><a href="">Протезирование голеней</a></li>
+                            <li><a href="">Интимная пластика</a></li>
+                            <li><a href="">Гинекомастия у мужчин</a></li>
+                          </ul>
+                          <ul>
+                            <li><a href="">Пластика лица</a></li>
+                            <li><a href="">Ринопластика</a></li>
+                            <li><a href="">Круговая подтяжка лица (фейслифтинг)</a></li>
+                            <li><a href="">Подтяжка зон лица</a></li>
+                            <li><a href="">Нитевой лифтинг</a></li>
+                            <li><a href="">Липофилинг</a></li>
+                            <li><a href="">Радиочастотная липосакция аппаратом FaceTite</a></li>
+                            <li><a href="">Блефаропластика (подтяжка век)</a></li>
+                            <li><a href="">Хейлопластика (коррекция формы и размера губ)</a></li>
+                            <li><a href="">Отопластика (коррекция ушей)</a></li>
+                          </ul>
+                          <ul>
+                            <li><a href="">Пластика тела</a></li>
+                            <li><a href="">Операции по маммопластике</a></li>
+                            <li><a href="">Абдоминопластика (коррекция живота)</a></li>
+                            <li><a href="">Радиочастотная липосакция аппаратом BodyTite</a></li>
+                            <li><a href="">Подтяжка избыточной кожи рук и ног</a></li>
+                            <li><a href="">Протезирование голеней</a></li>
+                            <li><a href="">Интимная пластика</a></li>
+                            <li><a href="">Гинекомастия у мужчин</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tabs__content-block">Содержимое второго блока</div>
+                      <div class="tabs__content-block">Содержимое третьего блока</div>
+                      <div class="tabs__content-block">Содержимое четвертого блока</div>
+                    </div>
+                  </div><a class="link  link--right" href="#"><span class="link-text">Стоимость операции</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a>
+                </div>
+              </div>
+              <div class="dropdown__submenu">
+                <div class="dropdown__submenu-back"></div><a class="dropdown__submenu-title" href="#"></a>
+                <ul>
+                  <li><button class="header__dropdown-btn"><span>Пластическая хирургия</span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 11.0876L8.69771 11.804L8 12.4835L7.30229 11.804L8 11.0876ZM2.44771 4.28411L8.69771 10.3712L7.30229 11.804L1.05229 5.71687L2.44771 4.28411ZM7.30229 10.3712L13.5523 4.28411L14.9477 5.71687L8.69771 11.804L7.30229 10.3712Z" fill="#0F1F3F"></path>
+                      </svg></button>
+                    <div class="dropdown__submenu">
+                      <div class="dropdown__submenu-back"></div><a class="dropdown__submenu-title" href="#"></a>
+                      <ul>
+                        <li><button class="header__dropdown-btn"><span>Пластика лица</span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8 11.0876L8.69771 11.804L8 12.4835L7.30229 11.804L8 11.0876ZM2.44771 4.28411L8.69771 10.3712L7.30229 11.804L1.05229 5.71687L2.44771 4.28411ZM7.30229 10.3712L13.5523 4.28411L14.9477 5.71687L8.69771 11.804L7.30229 10.3712Z" fill="#0F1F3F"></path>
+                            </svg></button>
+                          <div class="dropdown__submenu">
+                            <div class="dropdown__submenu-back"></div><a class="dropdown__submenu-title" href="#"></a>
+                            <ul>
+                              <li><a href="">Ринопластика</a></li>
+                              <li><a href="">Круговая подтяжка лица (фейслифтинг)</a></li>
+                              <li><a href="">Подтяжка зон лица</a></li>
+                              <li><a href="">Нитевой лифтинг</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><button class="header__dropdown-btn"><span>Пластика тела</span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8 11.0876L8.69771 11.804L8 12.4835L7.30229 11.804L8 11.0876ZM2.44771 4.28411L8.69771 10.3712L7.30229 11.804L1.05229 5.71687L2.44771 4.28411ZM7.30229 10.3712L13.5523 4.28411L14.9477 5.71687L8.69771 11.804L7.30229 10.3712Z" fill="#0F1F3F"></path>
+                            </svg></button>
+                          <div class="dropdown__submenu">
+                            <div class="dropdown__submenu-back"></div><a class="dropdown__submenu-title" href="#"></a>
+                            <ul>
+                              <li><a href="">Операции по маммопластике</a></li>
+                              <li><a href="">Абдоминопластика (коррекция живота)</a></li>
+                              <li><a href="">Липосакция</a></li>
+                              <li><a href="">Радиочастотная липосакция аппаратом BodyTite</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><button class="header__dropdown-btn"><span>Гинекология</span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 11.0876L8.69771 11.804L8 12.4835L7.30229 11.804L8 11.0876ZM2.44771 4.28411L8.69771 10.3712L7.30229 11.804L1.05229 5.71687L2.44771 4.28411ZM7.30229 10.3712L13.5523 4.28411L14.9477 5.71687L8.69771 11.804L7.30229 10.3712Z" fill="#0F1F3F"></path>
+                      </svg></button>
+                    <div class="dropdown__submenu">
+                      <div class="dropdown__submenu-back"></div><a class="dropdown__submenu-title" href="#"></a>
+                      <ul>
+                        <li><a href="">Гистероскопия</a></li>
+                        <li><button class="header__dropdown-btn"><span>Операция при заболеваниях шейки матки</span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8 11.0876L8.69771 11.804L8 12.4835L7.30229 11.804L8 11.0876ZM2.44771 4.28411L8.69771 10.3712L7.30229 11.804L1.05229 5.71687L2.44771 4.28411ZM7.30229 10.3712L13.5523 4.28411L14.9477 5.71687L8.69771 11.804L7.30229 10.3712Z" fill="#0F1F3F"></path>
+                            </svg></button>
+                          <div class="dropdown__submenu">
+                            <div class="dropdown__submenu-back"></div><a class="dropdown__submenu-title" href="#"></a>
+                            <ul>
+                              <li><a href="">Эксцезия шейки матки</a></li>
+                              <li><a href="">Конизация шейки матки</a></li>
+                              <li><a href="">Биопсия шейки матки</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="">Лапароскопическая операция при бесплодии</a></li>
+                        <li><a href="">Интимная пластика</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Хирурги</a></li>
+            <li><button class="header__dropdown-btn"><span>Клиника</span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 11.0876L8.69771 11.804L8 12.4835L7.30229 11.804L8 11.0876ZM2.44771 4.28411L8.69771 10.3712L7.30229 11.804L1.05229 5.71687L2.44771 4.28411ZM7.30229 10.3712L13.5523 4.28411L14.9477 5.71687L8.69771 11.804L7.30229 10.3712Z" fill="#0F1F3F"></path>
+                </svg></button>
+              <div class="header__dropdown">
+                <div class="header__dropdown-inner">
+                  <ul class="header__dropdown-column_list">
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Статьи</a></li>
+                    <li><a href="">Акции</a></li>
+                    <li><a href="">Юридическая информация</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown__submenu">
+                <div class="dropdown__submenu-back"></div><a class="dropdown__submenu-title" href="#"></a>
+                <ul>
+                  <li><a href="">О Клинике</a></li>
+                  <li><a href="">Быстрая реабилитация</a></li>
+                  <li><a href="">Оборудование</a></li>
+                  <li><a href="">Лицензии</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Отзывы</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav><button class="header__call"><span>Записаться на прием</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+          </svg></button>
+      </div>
+    </div>
+    <div class="search">
+      <div class="search__wrapper">
+        <div class="search__inner">
+          <div class="search__header">
+            <div class="search__title">Поиск</div>
+            <div class="search__close"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="27" width="32" height="2" transform="rotate(-45 4 27)" fill="#FFFFFF"></rect>
+                <rect x="5" y="4" width="32" height="2" transform="rotate(45 5 4)" fill="#FFFFFF"></rect>
+              </svg></div>
+          </div>
+          <form class="search__input"><button><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-linecap="square"></path>
+                <path d="M20.9984 20.9984L16.6484 16.6484" stroke="white" stroke-linecap="square"></path>
+              </svg></button><input type="text" /></form>
+          <div class="search__result">
+            <div class="tabs">
+              <ul class="tabs__caption">
+                <li>Найдено в операциях</li>
+                <li>Найдено на сайте</li>
+              </ul>
+              <div class="tabs__content">
+                <div class="tabs__content-block"><a class="link  link--button link--right" href="#"><span class="link-text">Маммопластика</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a><a class="link  link--button link--right" href="#"><span class="link-text">Блефаропластика (подтяжка век)</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a><a class="link  link--button link--right" href="#"><span class="link-text">Абдоминопластика</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a><a class="link  link--button link--right" href="#"><span class="link-text">Удаление маточной трубы по поводу внематочной беременности</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a><a class="link  link--button link--right" href="#"><span class="link-text">Липосакция</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a><a class="link  link--button link--right" href="#"><span class="link-text">Маммопластика</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a><a class="link  link--button link--right" href="#"><span class="link-text">Блефаропластика (подтяжка век)</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a><a class="link  link--button link--right" href="#"><span class="link-text">Абдоминопластика</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a><a class="link  link--button link--right" href="#"><span class="link-text">Удаление маточной трубы по поводу внематочной беременности</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a><a class="link  link--button link--right" href="#"><span class="link-text">Липосакция</span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12L2.28362 12.6977L1.60409 12L2.28362 11.3023L3 12ZM12.8471 3.32271L3.71638 12.6977L2.28362 11.3023L11.4143 1.92729L12.8471 3.32271ZM3.71638 11.3023L12.8471 20.6773L11.4143 22.0727L2.28362 12.6977L3.71638 11.3023ZM3 11L23.25 11L23.25 13L3 13L3 11Z" />
+                    </svg></a>
+                  <div class="pagination">
+                    <div class="pagination__block">
+                      <div class="pagination__show-more"><span>Показать еще</span><img src="img/shevron24.svg" alt="" /></div>
+                    </div>
+                    <div class="pagination__block"><span class="pagination__left"><img src="img/shevron24.svg" alt=""/></span>
+                      <ul class="pagination__list">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                      </ul><span class="pagination__right"><img src="img/shevron24.svg" alt=""/></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content-block"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="lending">
+    <div class="lending__banner" style="background-image: url('img/rehabilitation.png')">
+      <h1>Нацеленность на быструю реабилитацию</h1>
+    </div>
+    <div class="lending__inner">
+      <h2 class="observer">В Центре пластической хирургии и эндоскопии «Персона» внедрена уникальная стратегия оперативного лечения пациентов <span>Fast Track</span>, которая значительно ускоряет после операционное восстановление пациентов</h2>
+      <div class="lending-infographics__title"><span>Стратегия оперативного лечения</span> пациентов Fast Track</div>
+      <div class="lending-infographics">
+        <div class="lending-infographics__item-title grey">Классическая стратегия лечения</div>
+        <div class="lending-infographics__wrapper">
+          <div class="lending-infographics__inner">
+            <div class="lending-infographics__item grey">
+              <div class="lending-infographics__item-bar">
+                <div class="progress" data-progress="0"></div><span class="line"><span></span></span><span class="line"><span></span></span><span class="line"><span></span></span><span class="line"><span></span></span><span class="line"><span></span></span>
+              </div>
+            </div>
+            <div class="lending-infographics__stages"><span>Госпитализация</span><span>Предоперационная подготовка</span><span>Операция</span><span>Послеоперационный период</span><span>Выписка</span></div>
+            <div class="lending-infographics__item green">
+              <div class="lending-infographics__item-bar">
+                <div class="progress" data-progress="25"></div><span class="line"><span></span></span><span class="line"><span></span></span><span class="line"><span></span></span><span class="line"><span></span></span><span class="line"><span></span></span>
+              </div>
+            </div>
+          </div>
+          <div class="lending-infographics__popup">
+            <div class="lending-infographics__popup-item"><span></span>
+              <div class="lending-infographics__popup-title">Госпитализация</div>
+              <div class="lending-infographics__popup-desc">
+                <p>Время пробуждения пациента после операции сократилось благодаря изменению схемы анестезии. Предпочтение отдаютсё препаратам короткого действия — позволяющим сделать анестезию более управляемой и сократить время восстановления после наркоза.</p>
+                <p>Также большую роль играет анестезиолог-реаниматолог. Именно он объясняет значение ранней активизации после операции, важности раннего энтерального питания, дыхательной гимнастики.</p>
+              </div>
+            </div>
+            <div class="lending-infographics__popup-item"><span></span>
+              <div class="lending-infographics__popup-title">Предоперационная подготовка</div>
+              <div class="lending-infographics__popup-desc">
+                <p>Время пробуждения пациента после операции сократилось благодаря изменению схемы анестезии. Предпочтение отдаютсё препаратам короткого действия — позволяющим сделать анестезию более управляемой и сократить время восстановления после наркоза.</p>
+                <p>Также большую роль играет анестезиолог-реаниматолог. Именно он объясняет значение ранней активизации после операции, важности раннего энтерального питания, дыхательной гимнастики.</p>
+              </div>
+            </div>
+            <div class="lending-infographics__popup-item"><span></span>
+              <div class="lending-infographics__popup-title">Операция</div>
+              <div class="lending-infographics__popup-desc">
+                <p>Время пробуждения пациента после операции сократилось благодаря изменению схемы анестезии. Предпочтение отдаютсё препаратам короткого действия — позволяющим сделать анестезию более управляемой и сократить время восстановления после наркоза.</p>
+                <p>Также большую роль играет анестезиолог-реаниматолог. Именно он объясняет значение ранней активизации после операции, важности раннего энтерального питания, дыхательной гимнастики.</p>
+              </div>
+            </div>
+            <div class="lending-infographics__popup-item"><span></span>
+              <div class="lending-infographics__popup-title">Послеоперационный период в Fast Track</div>
+              <div class="lending-infographics__popup-desc">
+                <p>Время пробуждения пациента после операции сократилось благодаря изменению схемы анестезии. Предпочтение отдаютсё препаратам короткого действия — позволяющим сделать анестезию более управляемой и сократить время восстановления после наркоза.</p>
+                <p>Также большую роль играет анестезиолог-реаниматолог. Именно он объясняет значение ранней активизации после операции, важности раннего энтерального питания, дыхательной гимнастики.</p>
+              </div>
+            </div>
+            <div class="lending-infographics__popup-item"><span></span>
+              <div class="lending-infographics__popup-title">Выписка</div>
+              <div class="lending-infographics__popup-desc">
+                <p>Время пробуждения пациента после операции сократилось благодаря изменению схемы анестезии. Предпочтение отдаютсё препаратам короткого действия — позволяющим сделать анестезию более управляемой и сократить время восстановления после наркоза.</p>
+                <p>Также большую роль играет анестезиолог-реаниматолог. Именно он объясняет значение ранней активизации после операции, важности раннего энтерального питания, дыхательной гимнастики.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lending-infographics__item-title green">Стратегия лечения Fast Track</div>
+      </div>
+      <p class="p2 observer">Медицина не стоит на месте, Fast Track постоянно изучается и разрабатываются новые тактики. Такой подход способствует уменьшению страха и тревоги пациента, сокращению сроков пребывания в стационаре, поэтому бояться операции сегодня не стоит.</p>
+      <div class="lending-painkiller" style="background-image: url('img/painkiller.png')">
+        <div class="lending-painkiller__title"><span>Современная концепция обезболивания,</span> сводящая к минимуму побочное влияние анестезии на организм</div>
+        <div class="lending-painkiller__desc">Время пробуждения пациента после операции сократилось благодаря применению исключительно современных анестетиков и индивидуальному подходу. Мы отдаём предпочтение препаратам короткого действия, позволяющим сделать анестезию более управляемой, повысить скорость и качество восстановления после наркоза.</div>
+      </div>
+      <div class="lending-gallery">
+        <div class="lending-gallery__title">Уют как дома</div>
+        <div class="lending-gallery__wrapper">
+          <div class="swiper-wrapper">
+            <div class="lending-gallery__item swiper-slide"><img src="img/lending-gallery1.png" alt=""></div>
+            <div class="lending-gallery__item swiper-slide"><img src="img/lending-gallery2.png" alt=""></div>
+            <div class="lending-gallery__item swiper-slide"><img src="img/lending-gallery3.png" alt=""></div>
+            <div class="lending-gallery__item swiper-slide"><img src="img/lending-gallery4.png" alt=""></div>
+            <div class="lending-gallery__item swiper-slide"><img src="img/lending-gallery5.png" alt=""></div>
+            <div class="lending-gallery__item swiper-slide"><img src="img/lending-gallery6.png" alt=""></div>
+            <div class="lending-gallery__item swiper-slide"><img src="img/lending-gallery7.png" alt=""></div>
+            <div class="lending-gallery__item swiper-slide"><img src="img/lending-gallery8.png" alt=""></div>
+          </div>
+        </div>
+        <div class="lending-gallery__desc">С каждым клиентом прорабатываем индивидуальную программу лечения и профилактики. Все лечения и обследования проводятся в строгом соответствии стандартам оказания медицинской помощи. Для нас ценно время наших клиентов, поэтому весь лечебно-диагностический процесс будет организован в кратчайшие сроки.</div>
+      </div>
+    </div>
+    <div class="see-also"><a href="#">Смотрите также</a>
+      <div class="see-also__title">Современное оборудование</div>
+    </div>
+  </div>
+  <footer class="footer  footer--dark">
+    <div class="footer__top">
+      <div class="footer__address"> <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.25 7C13.25 10.75 8 14.25 8 14.25C8 14.25 2.75 10.75 2.75 7C2.75 5.60761 3.30312 4.27226 4.28769 3.28769C5.27226 2.30312 6.60761 1.75 8 1.75C9.39239 1.75 10.7277 2.30312 11.7123 3.28769C12.6969 4.27226 13.25 5.60761 13.25 7V7Z" stroke="#49AC32" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M8 8.25C8.69036 8.25 9.25 7.69036 9.25 7C9.25 6.30964 8.69036 5.75 8 5.75C7.30964 5.75 6.75 6.30964 6.75 7C6.75 7.69036 7.30964 8.25 8 8.25Z" fill="#49AC32" stroke="#49AC32" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg><span>Б. Печерская, д. 26</span></div>
+      <div class="footer__contacts"><a class="footer__contacts-tel" href="tel:#"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2810_26850)">
+              <path d="M14.6669 11.2802V13.2802C14.6677 13.4659 14.6297 13.6497 14.5553 13.8198C14.4809 13.9899 14.3718 14.1426 14.235 14.2681C14.0982 14.3937 13.9367 14.4892 13.7608 14.5487C13.5849 14.6082 13.3985 14.6303 13.2136 14.6136C11.1622 14.3907 9.19161 13.6897 7.46028 12.5669C5.8495 11.5433 4.48384 10.1777 3.46028 8.56689C2.3336 6.8277 1.63244 4.84756 1.41361 2.78689C1.39695 2.60254 1.41886 2.41673 1.47795 2.24131C1.53703 2.06589 1.63199 1.90469 1.75679 1.76797C1.88159 1.63126 2.03348 1.52203 2.20281 1.44724C2.37213 1.37245 2.55517 1.33374 2.74028 1.33356H4.74028C5.06382 1.33038 5.37748 1.44495 5.62279 1.65592C5.8681 1.86689 6.02833 2.15986 6.07361 2.48023C6.15803 3.12027 6.31458 3.74871 6.54028 4.35356C6.62998 4.59218 6.64939 4.8515 6.59622 5.10081C6.54305 5.35012 6.41952 5.57897 6.24028 5.76023L5.39361 6.60689C6.34265 8.27592 7.72458 9.65786 9.39361 10.6069L10.2403 9.76023C10.4215 9.58099 10.6504 9.45746 10.8997 9.40429C11.149 9.35112 11.4083 9.37053 11.6469 9.46023C12.2518 9.68593 12.8802 9.84248 13.5203 9.92689C13.8441 9.97258 14.1399 10.1357 14.3513 10.3852C14.5627 10.6348 14.6751 10.9533 14.6669 11.2802Z" stroke="#49AC32" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clippath id="clip0_2810_26850">
+                <rect width="16" height="16" fill="white"></rect>
+              </clippath>
+            </defs>
+          </svg><span>8 831 422-30-80  </span></a><a class="footer__contacts-mail" href="mailto:#"><svg width="14" height="11" viewbox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1V10H13V1M1 1H13M1 1L7 6L13 1" stroke="#49AC32"></path>
+          </svg><span>info@persona-plastica.ru  </span></a></div>
+      <div class="footer__social"> <a class="footer__social-vk" href="#"><svg width="36" height="36" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="18" fill="#0B133D" fill-opacity="0.98"></rect>
+            <path d="M24.3079 23.3136H26.2714C26.8433 23.3136 27.1102 23.0277 26.9577 22.4748C26.7861 21.922 26.138 21.1213 25.2992 20.1682C24.8417 19.6344 24.1554 19.0434 23.9457 18.7575C23.6597 18.3762 23.736 18.2237 23.9457 17.8806C23.9266 17.8806 26.3286 14.4873 26.5764 13.3435C26.7099 12.9241 26.5764 12.6191 25.9855 12.6191H24.0219C23.5263 12.6191 23.2975 12.886 23.1641 13.1719C23.1641 13.1719 22.1537 15.612 20.743 17.1943C20.2855 17.6518 20.0758 17.8043 19.828 17.8043C19.6945 17.8043 19.523 17.6518 19.523 17.2324V13.3244C19.523 12.8288 19.3705 12.6 18.9511 12.6H15.8628C15.5578 12.6 15.3672 12.8288 15.3672 13.0575C15.3672 13.5341 16.0725 13.6485 16.1488 14.9829V17.8806C16.1488 18.5096 16.0344 18.624 15.7866 18.624C15.1193 18.624 13.499 16.1649 12.5267 13.3625C12.3361 12.8097 12.1455 12.6 11.6498 12.6H9.66722C9.09532 12.6 9 12.8669 9 13.1528C9 13.6676 9.66722 16.2602 12.1073 19.6916C13.7277 22.0364 16.0344 23.2946 18.1123 23.2946C19.3705 23.2946 19.523 23.0086 19.523 22.532V20.7591C19.523 20.1872 19.6374 20.0919 20.0377 20.0919C20.3236 20.0919 20.8384 20.2444 22.0012 21.3692C23.3357 22.7036 23.5644 23.3136 24.3079 23.3136Z" fill="#F2F6FF"></path>
+          </svg></a><a class="footer__social-telegram" href="#"><svg width="36" height="36" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="18" fill="#0B133D" fill-opacity="0.98"></rect>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0312 17.5964C15.0577 15.7618 17.7427 14.5523 19.0861 13.968C22.9219 12.2995 23.7189 12.0097 24.2384 12.0001C24.3527 11.998 24.6082 12.0276 24.7737 12.168C24.9134 12.2866 24.9518 12.4468 24.9702 12.5592C24.9886 12.6716 25.0115 12.9277 24.9933 13.1278C24.7855 15.4118 23.8861 20.9545 23.4285 23.5127C23.2349 24.5951 22.8536 24.958 22.4845 24.9936C21.6824 25.0707 21.0734 24.4392 20.2965 23.9067C19.0809 23.0733 18.3941 22.5545 17.2141 21.7413C15.8504 20.8015 16.7344 20.285 17.5116 19.4409C17.715 19.22 21.249 15.8583 21.3174 15.5533C21.326 15.5152 21.3339 15.373 21.2532 15.298C21.1724 15.2229 21.0532 15.2486 20.9672 15.269C20.8453 15.2979 18.9033 16.6403 15.1411 19.2961C14.5899 19.6919 14.0906 19.8848 13.6433 19.8747C13.1501 19.8635 12.2015 19.5831 11.4962 19.3433C10.6312 19.0493 9.94377 18.8938 10.0036 18.3944C10.0348 18.1343 10.3773 17.8683 11.0312 17.5964Z" fill="#F5F8FF"></path>
+          </svg></a></div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">ООО «Центр Хирургии», <br> Сеть клиник «Персона» © 2022</div>
+      <div class="footer__info">
+        <div class="footer__info-wrapper"> <a href="">Политика конфиденциальности</a><a href="">Скачать прайс-лист</a><span>Информация, указанная на сайте, не является публичной офертой.</span></div>
+      </div>
+      <div class="footer__dev"><span>Сделано в <a href="">VZDH</a></span><span>Запрограммировано в <a href="">Burbon</a></span></div>
+    </div>
+  </footer><script src="js/bundle.js">
+  </script>
+
+</body>
+
+</html>
